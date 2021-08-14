@@ -1,0 +1,25 @@
+{
+  "name": "cesium-graph-es",
+  "version": "1.0.0",
+  "main": "./dist/cesium-graph-es.umd.js",
+  "module": "./dist/cesium-graph-es.es.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/cesium-graph-es.es",
+      "require": "./dist/cesium-graph-es.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^2.4.4"
+  },
+  "peerDependencies": {
+    "cesium": "^1.84.0"
+  }
+}
